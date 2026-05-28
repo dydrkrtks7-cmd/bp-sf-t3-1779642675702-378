@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <title>정보 | 강남 셔츠룸 서버 웜업 – 마포의 새로운 기준</title>
+    <meta name="description" content="마포에서 정의하는 강남 셔츠룸 서버 웜업의 진짜 의미를 파헤친다. 기존 시스템을 해체하고 새롭게 재구성하는 대담한 접근. 전화 010-6279-0862">
+    <meta name="keywords" content="강남 셔츠룸, 서버 웜업, 마포 셔츠룸, 강남 셔츠룸 추천, 셔츠룸 웜업, 정보">
+    <link rel="canonical" href="https://sf-t3-1779642675702-378.pages.dev/info">
+    <!-- Open Graph -->
+    <meta property="og:title" content="정보 | 강남 셔츠룸 × 서버 웜업 – 마포의 새로운 기준">
+    <meta property="og:description" content="마포에서 정의하는 강남 셔츠룸 서버 웜업의 진짜 의미를 파헤친다. 기존 시스템을 해체하고 새롭게 재구성하는 대담한 접근.">
+    <meta property="og:url" content="https://sf-t3-1779642675702-378.pages.dev/info">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ko_KR">
+    <style>
+        /* Brutalist Avant-Garde + kr-neon-void — 완전 재사용 */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Courier New', Courier, 'Noto Sans KR', monospace;
+            background: #0b0c10;
+            color: #f0f0f0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+        /* 헤더 & 네비게이션 */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            border-bottom: 3px solid #ff0055;
+            background: #111;
+        }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: 700;
+            letter-spacing: 0.2em;
+            color: #ff0055;
+            text-transform: uppercase;
+        }
+        .nav {
+            display: flex;
+            gap: 1.2rem;
+            align-items: center;
+        }
+        .nav a {
+            color: #aaa;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            padding: 0.3rem 0.6rem;
+            border: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav a:hover, .nav a.active {
+            color: #fff;
+            border-color: #ff0055;
+            background: #ff005522;
+        }
+        /* 모바일 햄버거 */
+        .hamburger-menu { display: none; cursor: pointer; }
+        .hamburger-menu .bar { display: block; width: 30px; height: 3px; background: #ff0055; margin: 6px 0; transition: 0.3s; }
+        /* 히어로 */
+        .hero {
+            padding: 5rem 0 4rem;
+            text-align: center;
+            border-bottom: 2px dashed #ff0055;
+            background: radial-gradient(circle at 10% 20%, #1a1a2e, #0b0c10);
+        }
+        .hero h1 {
+            font-size: 3.2rem;
+            font-weight: 800;
+            letter-spacing: -0.03em;
+            color: #ff0055;
+            text-shadow: 4px 4px 0 #2a0a1a, 0 0 30px #ff005566;
+            margin-bottom: 1rem;
+            word-break: keep-all;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #ccc;
+            max-width: 720px;
+            margin: 0 auto 2rem;
+        }
+        .hero .cta-phone {
+            display: inline-block;
+            background: #ff0055;
+            color: #0b0c10;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 1rem 2.5rem;
+            border: 3px solid #fff;
+            text-decoration: none;
+            transition: 0.15s;
+        }
+        .hero .cta-phone:hover { background: #fff; color: #ff0055; border-color: #ff0055; }
+        /* 섹션 공통 */
+        .section { padding: 4rem 0; }
+        .section-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #ff0055;
+            margin-bottom: 2rem;
+            border-left: 6px solid #ff0055;
+            padding-left: 1.5rem;
+        }
+        .card {
+            background: #15161a;
+            border: 2px solid #2a2b30;
+            padding: 2rem;
+            margin-bottom: 1.5rem;
+            transition: 0.2s;
+        }
+        .card:hover { border-color: #ff0055; box-shadow: 0 0 20px #ff005522; }
+        .card h3 { font-size: 1.6rem; margin-bottom: 0.8rem; color: #ff0055; }
+        .card p { color: #ccc; font-size: 1rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+        /* FAQ */
+        .faq-item { margin-bottom: 1.2rem; }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: #ff0055;
+            cursor: pointer;
+            border-bottom: 2px dotted #ff0055;
+            padding-bottom: 0.3rem;
+        }
+        .faq-answer { margin-top: 0.4rem; color: #bbb; }
+        /* 푸터 */
+        .footer {
+            border-top: 3px solid #ff0055;
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        /* 반응형 */
+        @media (max-width: 768px) {
+            .container { padding: 0 1rem; }
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1rem; }
+            .nav { display: none; flex-direction: column; background: #111; position: absolute; top: 70px; right: 0; width: 100%; padding: 1rem; border-bottom: 3px solid #ff0055; }
+            .nav.active { display: flex; }
+            .hamburger-menu { display: block; }
+            .hamburger-menu.active .bar:nth-child(2) { opacity: 0; }
+            .hamburger-menu.active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+            .hamburger-menu.active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- 헤더 (공통 디자인) -->
+    <header class="header">
+        <div class="logo">⚡ 마포 서버 웜업</div>
+        <div class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <nav class="nav" id="nav-menu">
+            <a href="/">홈</a>
+            <a href="/info" class="active">정보</a>
+            <a href="/pricing">가격</a>
+            <a href="/contact">연락처</a>
+        </nav>
+    </header>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero">
+        <div class="container">
+            <h1>강남 셔츠룸 서버 웜업<br>마포에서 다시 정의하다</h1>
+            <p>기존의 웜업 시스템은 가짜다. 진짜는 마포에서 시작된다. 우리는 시스템을 해체하고, 데이터를 리부트하며, 당신의 경험을 근본부터 바꾼다.</p>
+            <a href="tel:010-6279-0862" class="cta-phone">지금 전화: 010-6279-0862</a>
+        </div>
+    </section>
+
+    <!-- 상세 정보 섹션 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">왜 마포인가?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>📍 위치 기반 리부트</h3>
+                    <p>마포는 단순한 지역이 아니다. 강남 셔츠룸의 고정관념을 깨는 실험장이다. 서버 웜업은 이곳에서 진화한다. 트래픽은 말한다 — 진짜는 마포에 있다고.</p>
+                </div>
+                <div class="card">
+                    <h3>⚙️ 진정한 웜업의 의미</h3>
+                    <p>셔츠룸 서버 웜업은 단순 예열이 아니다. 시스템에 진동을 주고, 데이터 흐름을 재정렬하며, 당신의 경험을 최적화하는 과정이다. 우리는 그 과정을 투명하게 공개한다.</p>
+                </div>
+                <div class="card">
+                    <h3>🔥 강남 vs 마포 비교</h3>
+                    <p>강남은 정해진 루틴을 강요한다. 마포는 파괴와 재구성을 허용한다. 우리는 강남 셔츠룸의 데이터를 마포의 프레임으로 다시 읽는다. 결과는 다르다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ 섹션 (지역 시그널 + 상세) -->
+    <section class="section" style="background:#101116;">
+        <div class="container">
+            <h2 class="section-title">자주 묻는 질문 — 마포 버전</h2>
+            <div class="faq-item">
+                <div class="faq-question">“강남 셔츠룸 서버 웜업이 마포에서 더 낫다는 게 무슨 뜻인가요?”</div>
+                <div class="faq-answer">간단하다. 강남의 웜업 시스템은 규격화되어 있다. 마포에서는 그 규격을 해체하고, 실제 데이터 흐름에 맞게 재설계한다. 서버가 진짜로 준비된다는 느낌, 그게 우리가 말하는 웜업이다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">“기존 강남 셔츠룸과 어떤 차이가 있나요?”</div>
+                <div class="faq-answer">기존은 ‘예열’에 집중한다. 우리는 ‘프로토콜 재정의’에 집중한다. 네트워크 지연을 줄이고, 실제 사용자 시나리오를 반영한 웜업을 진행한다. 결과적으로 체감 퍼포먼스가 완전히 다르다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">“마포에서 진행하는 서버 웜업, 어떻게 신청하나요?”</div>
+                <div class="faq-answer">전화 한 통이면 된다. 010-6279-0862로 바로 연결된다. 상담은 무료이며, 시스템 진단 후 맞춤형 웜업 스케줄을 제안한다. 지역 할인도 적용된다.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">“강남 셔츠룸 추천 리스트에 없는 이유가 있나요?”</div>
+                <div class="faq-answer">우리는 리스트에 오르는 것을 원하지 않는다. 리스트는 시스템의 일부일 뿐이다. 우리는 시스템 자체를 의심하고, 당신만의 웜업 방식을 만든다. 추천 리스트보다 더 강력한 신호를 원한다면, 여기다.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 추가 정보 + 지역 시그널 -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">마포 서버 웜업 — 작동 방식</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>1단계 · 데이터 해체</h3>
+                    <p>기존 강남 셔츠룸의 웜업 데이터를 완전히 분해한다. 로그, 트래픽, 응답 시간을 분석하여 병목을 찾아낸다.</p>
+                </div>
+                <div class="card">
+                    <h3>2단계 · 프로토콜 재구성</h3>
+                    <p>마포의 네트워크 환경에 맞게 웜업 프로토콜을 다시 작성한다. 불필요한 캐시를 제거하고, 핵심 경로에 집중한다.</p>
+                </div>
+                <div class="card">
+                    <h3>3단계 · 실시간 적용</h3>
+                    <p>서버에 직접 적용하며, 실시간으로 성능을 모니터링한다. 이상 징후는 즉시 피드백하여 안정성을 보장한다.</p>
+                </div>
+            </div>
+            <div style="text-align:center; margin-top:2.5rem;">
+                <a href="tel:010-6279-0862" style="color:#ff0055; font-weight:700; font-size:1.3rem; text-decoration:underline;">📞 010-6279-0862</a>
+                <p style="color:#999; margin-top:0.5rem
+</body>
+</html>
