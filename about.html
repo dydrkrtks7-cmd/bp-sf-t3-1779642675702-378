@@ -1,175 +1,173 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="bpaas-design-system" content="brutalist-avantgarde">
-    <meta name="bpaas-design-theme" content="kr-neon-void">
-    <title>정보 | 강남 셔츠룸 서버 웜업 – 마포의 새로운 기준</title>
-    <meta name="description" content="마포에서 정의하는 강남 셔츠룸 서버 웜업의 진짜 의미를 파헤친다. 기존 시스템을 해체하고 새롭게 재구성하는 대담한 접근. 전화 010-6279-0862">
-    <meta name="keywords" content="강남 셔츠룸, 서버 웜업, 마포 셔츠룸, 강남 셔츠룸 추천, 셔츠룸 웜업, 정보">
-    <link rel="canonical" href="https://sf-t3-1779642675702-378.maphoshirts.today/about.html">
-    <!-- Open Graph -->
-    <meta property="og:title" content="정보 | 강남 셔츠룸 서버 웜업 – 마포의 새로운 기준">
-    <meta property="og:description" content="마포에서 정의하는 강남 셔츠룸 서버 웜업의 진짜 의미를 파헤친다. 기존 시스템을 해체하고 새롭게 재구성하는 대담한 접근. 전화 010-6279-0862">
-    <meta property="og:url" content="https://sf-t3-1779642675702-378.maphoshirts.today/about.html">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="ko_KR">
-    <style>
-        /* Brutalist Avant-Garde + kr-neon-void — 완전 재사용 */
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: 'Courier New', Courier, 'Noto Sans KR', monospace;
-            background: #0b0c10;
-            color: #f0f0f0;
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-        .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
-        /* 헤더 & 네비게이션 */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            border-bottom: 3px solid #ff0055;
-            background: #111;
-        }
-        .logo {
-            font-size: 1.4rem;
-            font-weight: 700;
-            letter-spacing: 0.2em;
-            color: #ff0055;
-            text-transform: uppercase;
-        }
-        .nav {
-            display: flex;
-            gap: 1.2rem;
-            align-items: center;
-        }
-        .nav a {
-            color: #aaa;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            padding: 0.3rem 0.6rem;
-            border: 2px solid transparent;
-            transition: 0.2s;
-        }
-        .nav a:hover, .nav a.active {
-            color: #fff;
-            border-color: #ff0055;
-            background: #ff005522;
-        }
-        /* 모바일 햄버거 */
-        .hamburger-menu { display: none; cursor: pointer; }
-        .hamburger-menu .bar { display: block; width: 30px; height: 3px; background: #ff0055; margin: 6px 0; transition: 0.3s; }
-        /* 히어로 */
-        .hero {
-            padding: 5rem 0 4rem;
-            text-align: center;
-            border-bottom: 2px dashed #ff0055;
-            background: radial-gradient(circle at 10% 20%, #1a1a2e, #0b0c10);
-        }
-        .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            letter-spacing: -0.03em;
-            color: #ff0055;
-            text-shadow: 4px 4px 0 #2a0a1a, 0 0 30px #ff005566;
-            margin-bottom: 1rem;
-            word-break: keep-all;
-        }
-        .hero p {
-            font-size: 1.3rem;
-            color: #ccc;
-            max-width: 720px;
-            margin: 0 auto 2rem;
-        }
-        .hero .cta-phone {
-            display: inline-block;
-            background: #ff0055;
-            color: #0b0c10;
-            font-weight: 700;
-            font-size: 1.2rem;
-            padding: 1rem 2.5rem;
-            border: 3px solid #fff;
-            text-decoration: none;
-            transition: 0.15s;
-        }
-        .hero .cta-phone:hover { background: #fff; color: #ff0055; border-color: #ff0055; }
-        /* 섹션 공통 */
-        .section { padding: 4rem 0; }
-        .section-title {
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #ff0055;
-            margin-bottom: 2rem;
-            border-left: 6px solid #ff0055;
-            padding-left: 1.5rem;
-        }
-        .card {
-            background: #15161a;
-            border: 2px solid #2a2b30;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            transition: 0.2s;
-        }
-        .card:hover { border-color: #ff0055; box-shadow: 0 0 20px #ff005522; }
-        .card h3 { font-size: 1.6rem; margin-bottom: 0.8rem; color: #ff0055; }
-        .card p { color: #ccc; font-size: 1rem; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        /* FAQ */
-        .faq-item { margin-bottom: 1.2rem; }
-        .faq-question {
-            font-weight: 700;
-            font-size: 1.1rem;
-            color: #ff0055;
-            cursor: pointer;
-            border-bottom: 2px dotted #ff0055;
-            padding-bottom: 0.3rem;
-        }
-        .faq-answer { margin-top: 0.4rem; color: #bbb; }
-        /* 푸터 */
-        .footer {
-            border-top: 3px solid #ff0055;
-            padding: 2rem;
-            text-align: center;
-            font-size: 0.85rem;
-            color: #666;
-        }
-        /* 반응형 */
-        @media (max-width: 768px) {
-            .container { padding: 0 1rem; }
-            .hero h1 { font-size: 2rem; }
-            .hero p { font-size: 1rem; }
-            .nav { display: none; flex-direction: column; background: #111; position: absolute; top: 70px; right: 0; width: 100%; padding: 1rem; border-bottom: 3px solid #ff0055; }
-            .nav.active { display: flex; }
-            .hamburger-menu { display: block; }
-            .hamburger-menu.active .bar:nth-child(2) { opacity: 0; }
-            .hamburger-menu.active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
-            .hamburger-menu.active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
-        }
-    </style>
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>정보 | 강남 셔츠룸 서버 웜업 – 마포의 새로운 기준</title>
+ <meta name="description" content="마포에서 정의하는 강남 셔츠룸 서버 웜업의 진짜 의미를 파헤친다. 기존 시스템을 해체하고 새롭게 재구성하는 대담한 접근.">
+ <meta name="keywords" content="강남 셔츠룸, 서버 웜업, 마포 셔츠룸, 강남 셔츠룸 추천, 셔츠룸 웜업, 정보">
+ <link rel="canonical" href="https://sf-t3-1779642675702-378.maphoshirts.today/about.html">
+ <!-- Open Graph -->
+ <meta property="og:title" content="정보 | 강남 셔츠룸 서버 웜업 – 마포의 새로운 기준">
+ <meta property="og:description" content="마포에서 정의하는 강남 셔츠룸 서버 웜업의 진짜 의미를 파헤친다. 기존 시스템을 해체하고 새롭게 재구성하는 대담한 접근.">
+ <meta property="og:url" content="https://sf-t3-1779642675702-378.maphoshirts.today/about.html">
+ <meta property="og:type" content="website">
+ <meta property="og:locale" content="ko_KR">
+ <style>
+ /* Brutalist Avant-Garde + kr-neon-void — 완전 재사용 */
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ font-family: 'Courier New', Courier, 'Noto Sans KR', monospace;
+ background: #0b0c10;
+ color: #f0f0f0;
+ line-height: 1.6;
+ overflow-x: hidden;
+ }
+ .container { max-width: 1280px; margin: 0 auto; padding: 0 2rem; }
+ /* 헤더 & 네비게이션 */
+ .header {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.5rem 2rem;
+ border-bottom: 3px solid #ff0055;
+ background: #111;
+ }
+ .logo {
+ font-size: 1.4rem;
+ font-weight: 700;
+ letter-spacing: 0.2em;
+ color: #ff0055;
+ text-transform: uppercase;
+ }
+ .nav {
+ display: flex;
+ gap: 1.2rem;
+ align-items: center;
+ }
+ .nav a {
+ color: #aaa;
+ text-decoration: none;
+ font-weight: 600;
+ font-size: 0.9rem;
+ padding: 0.3rem 0.6rem;
+ border: 2px solid transparent;
+ transition: 0.2s;
+ }
+ .nav a:hover, .nav a.active {
+ color: #fff;
+ border-color: #ff0055;
+ background: #ff005522;
+ }
+ /* 모바일 햄버거 */
+ .hamburger-menu { display: none; cursor: pointer; }
+ .hamburger-menu .bar { display: block; width: 30px; height: 3px; background: #ff0055; margin: 6px 0; transition: 0.3s; }
+ /* 히어로 */
+ .hero {
+ padding: 5rem 0 4rem;
+ text-align: center;
+ border-bottom: 2px dashed #ff0055;
+ background: radial-gradient(circle at 10% 20%, #1a1a2e, #0b0c10);
+ }
+ .hero h1 {
+ font-size: 3.2rem;
+ font-weight: 800;
+ letter-spacing: -0.03em;
+ color: #ff0055;
+ text-shadow: 4px 4px 0 #2a0a1a, 0 0 30px #ff005566;
+ margin-bottom: 1rem;
+ word-break: keep-all;
+ }
+ .hero p {
+ font-size: 1.3rem;
+ color: #ccc;
+ max-width: 720px;
+ margin: 0 auto 2rem;
+ }
+ .hero .cta-phone {
+ display: inline-block;
+ background: #ff0055;
+ color: #0b0c10;
+ font-weight: 700;
+ font-size: 1.2rem;
+ padding: 1rem 2.5rem;
+ border: 3px solid #fff;
+ text-decoration: none;
+ transition: 0.15s;
+ }
+ .hero .cta-phone:hover { background: #fff; color: #ff0055; border-color: #ff0055; }
+ /* 섹션 공통 */
+ .section { padding: 4rem 0; }
+ .section-title {
+ font-size: 2.2rem;
+ font-weight: 700;
+ color: #ff0055;
+ margin-bottom: 2rem;
+ border-left: 6px solid #ff0055;
+ padding-left: 1.5rem;
+ }
+ .card {
+ background: #15161a;
+ border: 2px solid #2a2b30;
+ padding: 2rem;
+ margin-bottom: 1.5rem;
+ transition: 0.2s;
+ }
+ .card:hover { border-color: #ff0055; box-shadow: 0 0 20px #ff005522; }
+ .card h3 { font-size: 1.6rem; margin-bottom: 0.8rem; color: #ff0055; }
+ .card p { color: #ccc; font-size: 1rem; }
+ .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+ /* FAQ */
+ .faq-item { margin-bottom: 1.2rem; }
+ .faq-question {
+ font-weight: 700;
+ font-size: 1.1rem;
+ color: #ff0055;
+ cursor: pointer;
+ border-bottom: 2px dotted #ff0055;
+ padding-bottom: 0.3rem;
+ }
+ .faq-answer { margin-top: 0.4rem; color: #bbb; }
+ /* 푸터 */
+ .footer {
+ border-top: 3px solid #ff0055;
+ padding: 2rem;
+ text-align: center;
+ font-size: 0.85rem;
+ color: #666;
+ }
+ /* 반응형 */
+ @media (max-width: 768px) {
+ .container { padding: 0 1rem; }
+ .hero h1 { font-size: 2rem; }
+ .hero p { font-size: 1rem; }
+ .nav { display: none; flex-direction: column; background: #111; position: absolute; top: 70px; right: 0; width: 100%; padding: 1rem; border-bottom: 3px solid #ff0055; }
+ .nav.active { display: flex; }
+ .hamburger-menu { display: block; }
+ .hamburger-menu.active .bar:nth-child(2) { opacity: 0; }
+ .hamburger-menu.active .bar:nth-child(1) { transform: translateY(9px) rotate(45deg); }
+ .hamburger-menu.active .bar:nth-child(3) { transform: translateY(-9px) rotate(-45deg); }
+ }
+ </style>
+ <link rel="icon" type="image/svg+xml" href="favicon.svg">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-    <!-- 헤더 (공통 디자인) -->
-    <header class="header">
-        <div class="logo">⚡ 마포 서버 웜업</div>
-        <div class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-        <nav class="nav" id="nav-menu">
-            <a href="/">홈</a>
-            <a href="/info" class="active">정보</a>
-            <a href="/pricing">가격</a>
-            <a href="/contact">연락처</a>
-        </nav>
-    </header>
+ <!-- 헤더 (공통 디자인) -->
+ <header class="header">
+ <div class="logo">⚡ 마포 서버 웜업</div>
+ <div class="hamburger-menu" id="hamburger" aria-label="메뉴 열기">
+ 
+ 
+ 
+ </div>
+ <nav class="nav" id="nav-menu">
+ <a href="/">홈</a>
+ <a href="/info" class="active">정보</a>
+ <a href="/pricing">가격</a>
+ <a href="/contact">연락처</a>
+ </nav>
+ </header>
 
 <main>
 <div class="container">
@@ -279,7 +277,7 @@
 </div>
 
 <div class="footer">
-<p>문의: <a class="cta-phone" href="tel:010-6279-0862">010-6279-0862</a></p>
+<p>문의: </p>
 </div>
 </div>
 </main>
